@@ -15,7 +15,7 @@ export const Home = () => {
           </h2>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
             Bonjour, je suis <br />
-            <span className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">Mohamed Achraf HAFDI</span>
+            <span className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r text-blue-400 bg-clip-text leading-right">Mohamed Achraf HAFDI</span>
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0">
             Je me spécialise dans la création de solutions numériques innovantes et de haute qualité, 
@@ -28,7 +28,7 @@ export const Home = () => {
             <a
               href={myCV}
               download="Mohamed_Achraf_HAFDI_CV.pdf" // Nom du fichier téléchargé
-              className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center"
+              className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center"
             >
               TÉLÉCHARGER LE CV
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,7 +42,7 @@ export const Home = () => {
                 href="https://github.com/MedAchraf23" // Remplacez par votre lien GitHub
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-teal-400 transition duration-300 p-3 rounded-full border border-gray-700 hover:border-teal-400"
+                className="text-gray-400 hover:text-blue-400 transition duration-300 p-3 rounded-full border border-gray-700 hover:border-blue-400"
               >
                 <FaGithub size={24} />
               </a>
@@ -50,7 +50,7 @@ export const Home = () => {
                 href="https://linkedin.com/in/mohamedachrafhafdi" // Remplacez par votre lien LinkedIn
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-teal-400 transition duration-300 p-3 rounded-full border border-gray-700 hover:border-teal-400"
+                className="text-gray-400 hover:text-blue-400 transition duration-300 p-3 rounded-full border border-gray-700 hover:border-blue-400"
               >
                 <FaLinkedinIn size={24} />
               </a>
@@ -62,7 +62,7 @@ export const Home = () => {
         <div className="md:w-1/2 flex justify-center">
           <div className="relative">
             {/* Cercle décoratif derrière la photo (optionnel) */}
-            <div className="absolute inset-0 bg-teal-500 opacity-20 rounded-full blur-xl transform translate-x-4 translate-y-4"></div>
+            <div className="absolute inset-0 bg-blue-400 opacity-20 rounded-full blur-xl transform translate-x-4 translate-y-4"></div>
             <img
               src={myPhoto} // Utilisez votre photo importée
               alt="Mohamed Achraf HAFDI"

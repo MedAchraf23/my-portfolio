@@ -1,3 +1,4 @@
+// ...existing code...
 import React from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'; // Import des icônes
 import myPhoto from '../../assets/profile-picture.png'; // Remplacez par le chemin réel de votre photo
@@ -5,17 +6,17 @@ import myCV from '../../assets/my-cv.pdf'; // Remplacez par le chemin réel de v
 
 export const Home = () => {
   return (
-    <section id="home" className="text-white py-20"> {/* Fond sombre et texte blanc */}
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between"> {/* Flexbox pour la mise en page, colonne sur mobile, ligne sur desktop */}
+    <section id="home" className="text-white py-20"> {/* reduced vertical padding */}
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         
         {/* Colonne de gauche : Texte et Boutons */}
         <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
           <h2 className="text-xl md:text-2xl font-semibold mb-2">
             Développeur de logiciels
           </h2>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4"> {/* reduced title size */}
             Bonjour, je suis <br />
-            <span className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r text-blue-400 bg-clip-text leading-right">Mohamed Achraf HAFDI</span>
+            <span className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r text-blue-400 bg-clip-text">Mohamed Achraf HAFDI</span> {/* reduced name size */}
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0">
             Je me spécialise dans la création de solutions numériques innovantes et de haute qualité, 
@@ -66,7 +67,8 @@ export const Home = () => {
             <img
               src={myPhoto} // Utilisez votre photo importée
               alt="Mohamed Achraf HAFDI"
-              className="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 relative z-10"
+              className="rounded-full w-48 h-48 md:w-72 md:h-72 object-cover border-4 relative z-10" /* reduced photo size */
+              style={{ objectPosition: '20% 30%' }} /* décale l'image vers la gauche (30%) et vers le bas (65%) */
             />
           </div>
         </div>
@@ -77,3 +79,4 @@ export const Home = () => {
 };
 
 export default Home;
+// ...existing code...

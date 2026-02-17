@@ -28,6 +28,12 @@ function App() {
         <Home />
         <About />
 
+        {/* Je compte faire mon portfolio en anglais et en francais
+du coup je compte utiliser json (fichier en anglais et en francais) mais j'ai jamais fait tel taff
+d'abord explique moi comment faire (la structure de cette demarche)
+genre coment creer mes json ou les mettre, comment faire en sorte que la page charge le contenu et comment elle charge le bo contenu en fonction de la lange choisie
+quelles dependances ... bref */}
+
         </div>
     
     </>

@@ -15,24 +15,33 @@
   },
   "about": {
       "title": "About Me",
-      "description": "Passionate developer with expertise in building scalable web applications and creating innovative solutions.",
+      "description": "M2 MIAGE student at Université de Haute-Alsace and Integration Project Manager Apprentice at Orange. I am looking for a full-time software development position starting in September 2026.",
       "frontend": "Frontend",
       "backend": "Backend",
-      "education": {
-        "title": "🏫 Education",
-        "degree1": "B.S. in Computer Science",
-        "school1": "XYZ University (2016-2020)",
-        "coursework": "Relevant Coursework: Data Structures, Web Development, Cloud Computing..."
-      },
       "experience": {
         "title": "💼 Work Experience",
         "job1": {
-          "title": "Software Engineer at ABC Corp (2020 - Present)",
-          "description": "Developed and maintained microservices for cloud-based applications."
+          "title": "PHP Developer & Integration Project Manager at Orange (Sep 2024 - Sep 2026)",
+          "description": "Developed and maintained an internal application using PHP / Laravel. Managed integration projects including ToIP, LAN/WiFi, and security."
         },
         "job2": {
-          "title": "Intern at DEF Startups (2019)",
-          "description": "Assisted in building front-end components and integration REST APIs."
+          "title": "Python Web Developer Intern at Provençale SA (May 2024 - Aug 2024)",
+          "description": "Created an absence planning website and built an inventory management interface integrated with the company's ERP (Sage X3)."
+        }
+      },
+      "education": {
+        "title": "🏫 Education",
+        "degree1": {
+          "title": "Master's Degree in Computer Science (MIAGE)",
+          "school": "Université de Haute-Alsace (2024 - Present)"
+        },
+        "degree2": {
+          "title": "Bachelor's Degree in Computer Science (MIAGE)",
+          "school": "Université de Haute-Alsace (2023 - 2024)"
+        },
+        "degree3": {
+          "title": "1st Year Master's in Computer Science (IS & Web)",
+          "school": "Université Abdelhamid Mehri (2019 - 2023)"
         }
       }
     }

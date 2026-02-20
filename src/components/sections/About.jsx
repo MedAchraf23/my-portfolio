@@ -26,7 +26,8 @@ export const About = () => {
             {t("about.title")}
           </h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          {/* 1. First Block: Description & Skills */}
+          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all mb-8">
             <p className="text-gray-300 mb-6">
               {t("about.description")}
             </p>
@@ -66,49 +67,54 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Education and Experience Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            
-            {/* Education Section */}
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">{t("about.education.title")}</h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong>{t("about.education.degree1")}</strong> - {t("about.education.school1")}
-                </li>
-                <li>
-                  {t("about.education.coursework")}
-                </li>
-              </ul>
-            </div>
-
-            {/* Experience Section */}
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">{t("about.experience.title")}</h3>
-              <div className="space-y-4 text-gray-300">
-                
-                {/* Job 1 */}
-                <div>
-                  <h4 className="font-semibold">
-                    {t("about.experience.job1.title")}
-                  </h4>
-                  <p>
-                    {t("about.experience.job1.description")}
-                  </p>
-                </div>
-
-                {/* Job 2 */}
-                <div>
-                  <h4 className="font-semibold">
-                    {t("about.experience.job2.title")}
-                  </h4>
-                  <p>
-                    {t("about.experience.job2.description")}
-                  </p>
-                </div>
-
+          {/* 2. Second Block: Work Experience (Full width) */}
+          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all mb-8">
+            <h3 className="text-xl font-bold mb-6">{t("about.experience.title")}</h3>
+            <div className="space-y-6 text-gray-300">
+              
+              {/* Job 1 */}
+              <div className="border-l-2 border-blue-500/30 pl-4">
+                <h4 className="font-semibold text-white">
+                  {t("about.experience.job1.title")}
+                </h4>
+                <p className="mt-2 text-sm">
+                  {t("about.experience.job1.description")}
+                </p>
               </div>
+
+              {/* Job 2 */}
+              <div className="border-l-2 border-blue-500/30 pl-4">
+                <h4 className="font-semibold text-white">
+                  {t("about.experience.job2.title")}
+                </h4>
+                <p className="mt-2 text-sm">
+                  {t("about.experience.job2.description")}
+                </p>
+              </div>
+
             </div>
+          </div>
+
+          {/* 3. Third Block: Education (Full width) */}
+          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+            <h3 className="text-xl font-bold mb-6">{t("about.education.title")}</h3>
+            <ul className="space-y-4 text-gray-300">
+              {/* Degree 1 */}
+              <li className="border-l-2 border-blue-500/30 pl-4">
+                <strong className="text-white block mb-1">{t("about.education.degree1.title")}</strong> 
+                <span className="text-sm">{t("about.education.degree1.school")}</span>
+              </li>
+              {/* Degree 2 */}
+              <li className="border-l-2 border-blue-500/30 pl-4">
+                <strong className="text-white block mb-1">{t("about.education.degree2.title")}</strong> 
+                <span className="text-sm">{t("about.education.degree2.school")}</span>
+              </li>
+              {/* Degree 3 */}
+              <li className="border-l-2 border-blue-500/30 pl-4">
+                <strong className="text-white block mb-1">{t("about.education.degree3.title")}</strong> 
+                <span className="text-sm">{t("about.education.degree3.school")}</span>
+              </li>
+            </ul>
           </div>
           
         </div>

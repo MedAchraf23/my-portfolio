@@ -1,23 +1,34 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const { t, i18n } = useTranslation();
+
+  // Method to toggle the application language
+  const toggleLanguage = () => {
+    const nextLang = i18n.language === "en" ? "fr" : "en";
+    i18n.changeLanguage(nextLang);
+  };
+
   useEffect(() => {
-    /* Le code de useEffect s'execute à chaque fois react détécte un changement
-    de la variable menuOen et donc bloque le défilement quand menuOpen est true 
-    Pourquoi fait-on ça ? Imagine que tu ouvres un menu qui prend tout l'écran sur ton téléphone 
-    Sans cette ligne : Si tu scrolles à l'intérieur du menu, une fois arrivé en bas, c'est le site derrière le menu qui va commencer à défiler. C'est très perturbant et peu professionnel.
-    Avec cette ligne : Le site derrière est "gelé". L'utilisateur reste concentré sur le menu*/
+    /* The useEffect code executes every time React detects a change
+       in the menuOpen variable, thus blocking the scroll when menuOpen is true.
+       Why do we do this? Imagine opening a full-screen menu on your phone.
+       Without this line: If you scroll inside the menu, once you reach the bottom, 
+       the site behind the menu starts scrolling.
+       With this line: The site behind is "frozen". The user stays focused on the menu. */
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
+
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
-            {" "}
-            Achraf<span className="text-blue-500">.Hafdi</span>{" "}
+            {" "} Achraf<span className="text-blue-500">.Hafdi</span>{" "}
           </a>
 
+          {/* Mobile menu toggle icon */}
           <div
             className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -25,35 +36,40 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             &#9776;
           </div>
 
+          {/* Desktop menu items */}
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Home
+              {t("navbar.home")}
             </a>
             <a
               href="#about"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              About{" "}
+              {t("navbar.about")}
             </a>
             <a
               href="#projects"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Projects{" "}
+              {t("navbar.projects")}
             </a>
             <a
               href="#contact"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Contact{" "}
+              {t("navbar.contact")}
             </a>
+
+            {/* Language toggle button */}
+            <button
+              onClick={toggleLanguage}
+              className="ml-4 px-3 py-1 text-sm font-semibold rounded border border-gray-600 text-gray-300 hover:text-white hover:border-white transition-colors"
+            >
+              {i18n.language === "en" ? "FR" : "EN"}
+            </button>
           </div>
         </div>
       </div>

@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "role": "Développeur de logiciels",
+    "greeting": "Bonjour, je suis",
+    "name": "Mohamed Achraf HAFDI",
+    "description": "Je me spécialise dans la création de solutions numériques innovantes et de haute qualité, en utilisant les dernières technologies pour répondre à vos besoins.",
+    "downloadCV": "TÉLÉCHARGER LE CV",
+    "cvFileName": "Mohamed_Achraf_HAFDI_CV_FR.pdf"
+  },
+  "about": {
+      "title": "À propos de moi",
+      "description": "Développeur passionné avec une expertise dans la création d'applications web évolutives et de solutions innovantes.",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "education": {
+        "title": "🏫 Formation",
+        "degree1": "Licence en Informatique",
+        "school1": "Université XYZ (2016-2020)",
+        "coursework": "Cours pertinents : Structures de données, Développement Web, Cloud Computing..."
+      },
+      "experience": {
+        "title": "💼 Expérience Professionnelle",
+        "job1": {
+          "title": "Ingénieur Logiciel chez ABC Corp (2020 - Présent)",
+          "description": "Développement et maintenance de microservices pour des applications cloud."
+        },
+        "job2": {
+          "title": "Stagiaire chez DEF Startups (2019)",
+          "description": "Assistance à la création de composants front-end et à l'intégration d'API REST."
+        }
+      }
+    }
+}

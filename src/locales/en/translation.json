@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "role": "Software Developer",
+    "greeting": "Hello, I am",
+    "name": "Mohamed Achraf HAFDI",
+    "description": "I specialize in building innovative and high-quality digital solutions, utilizing the latest technologies to meet your specific needs.",
+    "downloadCV": "DOWNLOAD CV",
+    "cvFileName": "Mohamed_Achraf_HAFDI_CV_EN.pdf"
+  },
+  "about": {
+      "title": "About Me",
+      "description": "Passionate developer with expertise in building scalable web applications and creating innovative solutions.",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "education": {
+        "title": "🏫 Education",
+        "degree1": "B.S. in Computer Science",
+        "school1": "XYZ University (2016-2020)",
+        "coursework": "Relevant Coursework: Data Structures, Web Development, Cloud Computing..."
+      },
+      "experience": {
+        "title": "💼 Work Experience",
+        "job1": {
+          "title": "Software Engineer at ABC Corp (2020 - Present)",
+          "description": "Developed and maintained microservices for cloud-based applications."
+        },
+        "job2": {
+          "title": "Intern at DEF Startups (2019)",
+          "description": "Assisted in building front-end components and integration REST APIs."
+        }
+      }
+    }
+}

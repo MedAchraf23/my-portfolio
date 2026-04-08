@@ -19,30 +19,77 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "experience": {
-        "title": "💼 Work Experience",
+        "title": "Work Experience",
         "job1": {
-          "title": "PHP Developer & Integration Project Manager at Orange (Sep 2024 - Sep 2026)",
-          "description": "Developed and maintained an internal application using PHP / Laravel. Managed integration projects including ToIP, LAN/WiFi, and security."
+          "title": "PHP Developer & Integration Project Manager",
+          "company": "Orange",
+          "description": "Developed and maintained an internal application using PHP / Laravel. \nManaged integration projects including ToIP, LAN/WiFi, and security.",
+          "period": "Sep 2024 - Sep 2026"
         },
         "job2": {
-          "title": "Python Web Developer Intern at Provençale SA (May 2024 - Aug 2024)",
-          "description": "Created an absence planning website and built an inventory management interface integrated with the company's ERP (Sage X3)."
+          "title": "Python Web Developer Intern",
+          "company": "Provençale SA",
+          "description": "Created an absence planning website and built an inventory management interface integrated with the company's ERP (Sage X3).",
+          "period": "May 2024 - Aug 2024"
         }
       },
       "education": {
-        "title": "🏫 Education",
+        "title": "Education",
         "degree1": {
           "title": "Master's Degree in Computer Science (MIAGE)",
-          "school": "Université de Haute-Alsace (2024 - Present)"
+          "school": "Université de Haute-Alsace",
+          "period": "2024 - Present"
         },
         "degree2": {
           "title": "Bachelor's Degree in Computer Science (MIAGE)",
-          "school": "Université de Haute-Alsace (2023 - 2024)"
+          "school": "Université de Haute-Alsace",
+          "period": "2023 - 2024"
         },
         "degree3": {
           "title": "1st Year Master's in Computer Science (IS & Web)",
-          "school": "Université Abdelhamid Mehri (2019 - 2023)"
+          "school": "Université Abdelhamid Mehri",
+          "period": "2019 - 2023"
         }
+      }
+    },
+    "projects": {
+      "title": "My Projects",
+      "project1": {
+        "name": "Calorie Tracker",
+        "description": "Development of a nutritional tracking website with a PHP back-end using PDO, AJAX for a smooth UX, and an MVC architecture for organized code. The front-end was responsive and attractive, built with HTML, CSS and Bootstrap. Agile teamwork for efficient development.",
+        "tools": "Html/Css, PHP(PDO), Javascript, AJAX, Agile"
+      },
+      "project2": {
+        "name": "SmartDoc",
+        "description": "Development of a health platform allowing patients to search, rate and review doctors, while doctors manage appointments and view feedback. Built with Angular for the front-end, NodeJS for the back-end, and MariaDB for data management, following Agile methodology.",
+        "tools": "Angular, NodeJS, MariaDB, Agile, Tailwind CSS"
+      },
+      "project3": {
+        "name": "Portfolio",
+        "description": "Personal portfolio developed with React and TailwindCSS, showcasing my projects and skills in an interactive and responsive way.",
+        "tools": "React, TailwindCSS, i18n"
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Please fill out the form below to get in touch with me.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "company": "Company (optional)",
+      "phone": "Phone Number (optional)",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again.",
+      "info": {
+        "phoneTitle": "Phone",
+        "phoneValue": "(+33) 7 45 05 97 69",
+        "emailTitle": "E-mail",
+        "emailValue": "mohamedachrafhafdi@gmail.com",
+        "addressTitle": "Address",
+        "addressValue": "Strasbourg 67000, France"
       }
     }
 }

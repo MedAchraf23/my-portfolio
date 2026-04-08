@@ -18,10 +18,10 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-30"
+      className="flex items-center justify-center py-28"
     >
       <RevealOnScroll>
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="w-4/5 max-w-7xl mx-auto px-4">
           <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {t("about.title")}
           </h2>
@@ -68,54 +68,49 @@ export const About = () => {
             </div>
           </div>
 
-          {/* 2. Second Block: Work Experience (Full width) */}
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all mb-8">
-            <h3 className="text-3xl font-bold mb-6">{t("about.experience.title")}</h3>
-            <div className="space-y-6 text-gray-300">
-              
-              {/* Job 1 */}
-              <div className="border-l-2 border-blue-500/30 pl-4">
-                <h4 className="font-semibold text-white">
-                  {t("about.experience.job1.title")}
+          {/* 2. Second Block: Work Experience */}
+          <h3 className="text-3xl font-bold mb-6">{t("about.experience.title")}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {["job1", "job2"].map((job) => (
+              <div
+                key={job}
+                className="rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all"
+              >
+                <h4 className="text-xl font-semibold text-blue-500 mb-2">
+                  {t(`about.experience.${job}.title`)}
                 </h4>
-                <p className="mt-2 text-base">
-                  {t("about.experience.job1.description")}
+                <p className="text-white font-medium mb-2">
+                  {t(`about.experience.${job}.company`)}
                 </p>
-              </div>
-
-              {/* Job 2 */}
-              <div className="border-l-2 border-blue-500/30 pl-4">
-                <h4 className="font-semibold text-white">
-                  {t("about.experience.job2.title")}
-                </h4>
-                <p className="mt-2 text-base">
-                  {t("about.experience.job2.description")}
+                <p className=" whitespace-pre-line text-gray-400 text-base mb-4">
+                  {t(`about.experience.${job}.description`)}
                 </p>
+                <span className="text-blue-400 text-sm">
+                  {t(`about.experience.${job}.period`)}
+                </span>
               </div>
-
-            </div>
+            ))}
           </div>
 
-          {/* 3. Third Block: Education (Full width) */}
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <h3 className="text-3xl font-bold mb-6">{t("about.education.title")}</h3>
-            <ul className="space-y-4 text-gray-300">
-              {/* Degree 1 */}
-              <li className="border-l-2 border-blue-500/30 pl-4">
-                <strong className="text-white block mb-1">{t("about.education.degree1.title")}</strong> 
-                <span className="text-base">{t("about.education.degree1.school")}</span>
-              </li>
-              {/* Degree 2 */}
-              <li className="border-l-2 border-blue-500/30 pl-4">
-                <strong className="text-white block mb-1">{t("about.education.degree2.title")}</strong> 
-                <span className="text-base">{t("about.education.degree2.school")}</span>
-              </li>
-              {/* Degree 3 */}
-              <li className="border-l-2 border-blue-500/30 pl-4">
-                <strong className="text-white block mb-1">{t("about.education.degree3.title")}</strong> 
-                <span className="text-base">{t("about.education.degree3.school")}</span>
-              </li>
-            </ul>
+          {/* 3. Third Block: Education */}
+          <h3 className="text-3xl font-bold mb-6">{t("about.education.title")}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {["degree1", "degree2", "degree3"].map((deg) => (
+              <div
+                key={deg}
+                className="rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all"
+              >
+                <h4 className="text-xl font-semibold text-blue-500 mb-2">
+                  {t(`about.education.${deg}.title`)}
+                </h4>
+                <p className="text-white font-medium mb-4">
+                  {t(`about.education.${deg}.school`)}
+                </p>
+                <span className="text-blue-400 text-sm">
+                  {t(`about.education.${deg}.period`)}
+                </span>
+              </div>
+            ))}
           </div>
           
         </div>

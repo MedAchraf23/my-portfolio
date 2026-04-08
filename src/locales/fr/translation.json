@@ -19,30 +19,77 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "experience": {
-        "title": "💼 Expérience Professionnelle",
+        "title": "Expérience Professionnelle",
         "job1": {
-          "title": "Développeur PHP & Chargé de projets d'intégration chez Orange (Sept. 2024 - Sept. 2026)",
-          "description": "Développement et maintenance d'une application interne en PHP / Laravel. Pilotage de projets d'intégration (ToIP, LAN/WiFi, sécurité)."
+          "title": "Développeur PHP & Chargé de projets d'intégration",
+          "company": "Orange",
+          "description": "Développement et maintenance d'une application interne en PHP / Laravel. \nPilotage de projets d'intégration (ToIP, LAN/WiFi, sécurité).",
+          "period": "Sept. 2024 - Sept. 2026"
         },
         "job2": {
-          "title": "Stagiaire Développement Web Python chez Provençale SA (Mai 2024 - Août 2024)",
-          "description": "Création d'un site web de présentation de planning des absences et d'une interface de gestion de stock intégrée à l'ERP de l'entreprise (Sage X3)."
+          "title": "Stagiaire Développement Web Python",
+          "company": "Provençale SA",
+          "description": "Création d'un site web de présentation de planning des absences et d'une interface de gestion de stock intégrée à l'ERP de l'entreprise (Sage X3).",
+          "period": "Mai 2024 - Août 2024"
         }
       },
       "education": {
-        "title": "🏫 Formation",
+        "title": "Formation",
         "degree1": {
           "title": "Master Informatique parcours MIAGE",
-          "school": "Université de Haute-Alsace (2024 - En cours)"
+          "school": "Université de Haute-Alsace",
+          "period": "2024 - En cours"
         },
         "degree2": {
           "title": "Licence Informatique parcours MIAGE",
-          "school": "Université de Haute-Alsace (2023 - 2024)"
+          "school": "Université de Haute-Alsace",
+          "period": "2023 - 2024"
         },
         "degree3": {
           "title": "Master 1 Informatique parcours SI & Web",
-          "school": "Université Abdelhamid Mehri (2019 - 2023)"
+          "school": "Université Abdelhamid Mehri",
+          "period": "2019 - 2023"
         }
+      }
+    },
+    "projects": {
+      "title": "Mes Projets",
+      "project1": {
+        "name": "Calorie Tracker",
+        "description": "Développement d'un site de suivi nutritionnel avec un back-end en PHP utilisant PDO, AJAX pour une UX fluide, et une architecture MVC pour un code organisé. Le front-end était réactif et attrayant, construit avec HTML, CSS et Bootstrap. Travail en équipe Agile pour un développement efficace.",
+        "tools": "Html/Css, PHP(PDO), Javascript, AJAX, Agile"
+      },
+      "project2": {
+        "name": "SmartDoc",
+        "description": "Développement d'une plateforme de santé permettant aux patients de rechercher, évaluer et commenter les médecins, tandis que les médecins gèrent les rendez-vous et consultent les commentaires. Construit avec Angular pour le front-end, NodeJS pour le back-end, et MariaDB pour la gestion des données, en suivant la méthodologie Agile.",
+        "tools": "Angular, NodeJS, MariaDB, Agile, Tailwind CSS"
+      },
+      "project3": {
+        "name": "Portfolio",
+        "description": "Portfolio personnel développé avec React et TailwindCSS, présentant mes projets et compétences de manière interactive et responsive.",
+        "tools": "React, TailwindCSS, i18n"
+      }
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "subtitle": "Veuillez remplir le formulaire ci-dessous pour me contacter.",
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "email": "Adresse e-mail",
+      "company": "Entreprise (facultatif)",
+      "phone": "Numéro de téléphone (facultatif)",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "info": {
+        "phoneTitle": "Téléphone",
+        "phoneValue": "(+33) 7 45 05 97 69",
+        "emailTitle": "E-mail",
+        "emailValue": "mohamedachrafhafdi@gmail.com",
+        "addressTitle": "Adresse",
+        "addressValue": "Strasbourg 67000, France"
       }
     }
 }

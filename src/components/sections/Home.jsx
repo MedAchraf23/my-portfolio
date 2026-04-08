@@ -8,7 +8,7 @@ export const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="text-white py-20">
+    <section id="home" className="text-white py-28">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         
         {/* Left Column: Text and Buttons */}

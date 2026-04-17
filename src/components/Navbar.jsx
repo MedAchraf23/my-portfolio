@@ -21,11 +21,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(26,26,26,0.85)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
-            {" "} Achraf<span className="text-blue-500">.Hafdi</span>{" "}
+            {" "} Achraf<span className="text-accent">.Hafdi</span>{" "}
           </a>
 
           {/* Mobile menu toggle icon */}
@@ -66,9 +66,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             {/* Language toggle button */}
             <button
               onClick={toggleLanguage}
-              className="ml-4 px-3 py-1 text-sm font-semibold rounded border border-gray-600 text-gray-300 hover:text-white hover:border-white transition-colors"
+              className="ml-4 px-3 py-1.5 text-sm font-semibold rounded border border-gray-600 text-gray-300 hover:text-white hover:border-accent transition-colors flex items-center gap-2 cursor-pointer"
+              aria-label="Toggle language"
             >
-              {i18n.language === "en" ? "FR" : "EN"}
+              <span className="text-base leading-none" aria-hidden="true">
+                {i18n.language === "en" ? "\uD83C\uDDEB\uD83C\uDDF7" : "\uD83C\uDDEC\uD83C\uDDE7"}
+              </span>
+              <span>{i18n.language === "en" ? "FR" : "EN"}</span>
             </button>
           </div>
         </div>

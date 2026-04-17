@@ -46,11 +46,11 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex items-center justify-center py-28"
+      className="flex items-center justify-center py-20 md:py-28"
     >
       <RevealOnScroll>
-        <div className="w-4/5 max-w-7xl mx-auto px-4">
-          <h2 className="text-5xl font-bold pb-14 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <div className="w-11/12 md:w-4/5 max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold pb-14 text-accent text-center tracking-wide">
             {t("projects.title")}
           </h2>
 
@@ -58,15 +58,15 @@ export const Projects = () => {
             {/* Left column — Project info */}
             <div className="md:w-1/2 flex flex-col justify-between">
               <div>
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h3 className="text-3xl md:text-4xl font-semibold text-accent-soft mb-6">
                   {t(`projects.${current.key}.name`)}
                 </h3>
 
-                <p className="text-gray-400 text-base leading-relaxed mb-8">
+                <p className="text-white text-base leading-relaxed mb-8">
                   {t(`projects.${current.key}.description`)}
                 </p>
 
-                <p className="text-cyan-400 text-base font-medium">
+                <p className="text-accent text-base font-medium">
                   {t(`projects.${current.key}.tools`)}
                 </p>
               </div>
@@ -108,14 +108,14 @@ export const Projects = () => {
               <div className="flex gap-3">
                 <button
                   onClick={goToPrevious}
-                  className="w-12 h-12 flex items-center justify-center bg-cyan-400 hover:bg-cyan-300 text-black rounded-md transition"
+                  className="w-12 h-12 flex items-center justify-center bg-accent hover:bg-accent-soft text-[#1a1a1a] rounded-md transition cursor-pointer"
                   aria-label="Previous project"
                 >
                   <FaChevronLeft size={18} />
                 </button>
                 <button
                   onClick={goToNext}
-                  className="w-12 h-12 flex items-center justify-center bg-cyan-400 hover:bg-cyan-300 text-black rounded-md transition"
+                  className="w-12 h-12 flex items-center justify-center bg-accent hover:bg-accent-soft text-[#1a1a1a] rounded-md transition cursor-pointer"
                   aria-label="Next project"
                 >
                   <FaChevronRight size={18} />

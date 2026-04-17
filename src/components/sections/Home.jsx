@@ -8,31 +8,31 @@ export const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="text-white py-28">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-        
+    <section id="home" className="text-white py-20 md:py-28 min-h-screen flex items-center">
+      <div className="w-4/5 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+
         {/* Left Column: Text and Buttons */}
-        <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-          <h2 className="text-xl md:text-2xl font-semibold mb-2">
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h2 className="text-xl md:text-2xl font-semibold mb-2 text-accent-soft tracking-wide">
             {t('home.role')}
           </h2>
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-white">
             {t('home.greeting')} <br />
-            <span className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r text-blue-400 bg-clip-text">
+            <span className="text-5xl md:text-6xl font-extrabold mb-6 text-accent">
               {t('home.name')}
             </span>
           </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0">
+          <p className="text-white/90 text-base md:text-lg mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
             {t('home.description')}
           </p>
 
           {/* Buttons and Social Links */}
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
             {/* Download CV Button */}
             <a
               href={myCV}
               download={t('home.cvFileName')}
-              className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center"
+              className="bg-accent hover:bg-accent-soft text-[#1a1a1a] font-bold py-3 px-6 rounded-full transition duration-300 flex items-center"
             >
               {t('home.downloadCV')}
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,12 +41,12 @@ export const Home = () => {
             </a>
 
             {/* Social Icons */}
-            <div className="flex gap-4 mt-4 md:mt-0">
+            <div className="flex gap-4">
               <a
                 href="https://github.com/MedAchraf23"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition duration-300 p-3 rounded-full border border-gray-700 hover:border-blue-400"
+                className="text-gray-400 hover:text-accent transition duration-300 p-3 rounded-full border border-gray-700 hover:border-accent"
                 aria-label="GitHub Profile"
               >
                 <FaGithub size={24} />
@@ -55,7 +55,7 @@ export const Home = () => {
                 href="https://linkedin.com/in/mohamedachrafhafdi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition duration-300 p-3 rounded-full border border-gray-700 hover:border-blue-400"
+                className="text-gray-400 hover:text-accent transition duration-300 p-3 rounded-full border border-gray-700 hover:border-accent"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedinIn size={24} />
@@ -65,14 +65,14 @@ export const Home = () => {
         </div>
 
         {/* Right Column: Photo */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative">
             {/* Decorative circle behind the photo */}
-            <div className="absolute inset-0 bg-blue-400 opacity-20 rounded-full blur-xl transform translate-x-4 translate-y-4"></div>
+            <div className="absolute inset-0 bg-accent opacity-20 rounded-full blur-2xl scale-110"></div>
             <img
               src={myPhoto}
               alt={t('home.name')}
-              className="rounded-full w-48 h-48 md:w-72 md:h-72 object-cover border-4 relative z-10"
+              className="rounded-full w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover border-4 border-accent/30 relative z-10"
               style={{ objectPosition: '20% 30%' }}
             />
           </div>

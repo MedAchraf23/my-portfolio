@@ -58,33 +58,41 @@ export const Contact = () => {
       });
   };
 
+  const phoneValue = t("contact.info.phoneValue");
+  const emailValue = t("contact.info.emailValue");
+  const phoneHref = `tel:${phoneValue.replace(/[^+\d]/g, "")}`;
+  const emailHref = `mailto:${emailValue}`;
+
   const contactInfo = [
     {
       icon: <FaPhone size={20} />,
       title: t("contact.info.phoneTitle"),
-      value: t("contact.info.phoneValue"),
+      value: phoneValue,
+      href: phoneHref,
     },
     {
       icon: <FaEnvelope size={20} />,
       title: t("contact.info.emailTitle"),
-      value: t("contact.info.emailValue"),
+      value: emailValue,
+      href: emailHref,
     },
     {
       icon: <FaMapMarkerAlt size={20} />,
       title: t("contact.info.addressTitle"),
       value: t("contact.info.addressValue"),
+      href: null,
     },
   ];
 
   return (
-    <section id="contact" className="flex items-center justify-center py-28">
+    <section id="contact" className="flex items-center justify-center py-20 md:py-28">
       <RevealOnScroll>
-        <div className="w-4/5 max-w-7xl mx-auto px-4">
+        <div className="w-11/12 md:w-4/5 max-w-7xl mx-auto px-4">
           {/* Header */}
-          <h2 className="text-5xl font-bold pb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold pb-4 text-accent text-center tracking-wide">
             {t("contact.title")}
           </h2>
-          <p className="text-gray-400 text-center mb-12">
+          <p className="text-white text-center mb-12 leading-relaxed">
             {t("contact.subtitle")}
           </p>
 
@@ -99,7 +107,7 @@ export const Contact = () => {
                 onChange={handleChange}
                 placeholder={t("contact.firstName")}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent transition"
               />
               {/* Last Name */}
               <input
@@ -109,7 +117,7 @@ export const Contact = () => {
                 onChange={handleChange}
                 placeholder={t("contact.lastName")}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent transition"
               />
             </div>
 
@@ -122,7 +130,7 @@ export const Contact = () => {
                 onChange={handleChange}
                 placeholder={t("contact.email")}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent transition"
               />
               {/* Phone */}
               <input
@@ -131,7 +139,7 @@ export const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={t("contact.phone")}
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent transition"
               />
             </div>
 
@@ -142,7 +150,7 @@ export const Contact = () => {
               value={formData.company}
               onChange={handleChange}
               placeholder={t("contact.company")}
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition mb-6"
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent transition mb-6"
             />
 
             {/* Message */}
@@ -153,7 +161,7 @@ export const Contact = () => {
               placeholder={t("contact.message")}
               required
               rows={6}
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition resize-none mb-6"
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent transition resize-none mb-6"
             />
 
             {/* Submit button + status */}
@@ -161,7 +169,7 @@ export const Contact = () => {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="bg-cyan-400 hover:bg-cyan-300 text-black font-semibold py-3 px-8 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-accent hover:bg-accent-soft text-[#1a1a1a] font-semibold py-3 px-8 rounded-lg transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === "sending"
                   ? t("contact.sending")
@@ -184,10 +192,19 @@ export const Contact = () => {
           <div className="flex flex-col md:flex-row justify-between gap-8 border-t border-white/10 pt-10">
             {contactInfo.map((item, index) => (
               <div key={index} className="flex items-center gap-4">
-                <div className="text-cyan-400">{item.icon}</div>
+                <div className="text-accent">{item.icon}</div>
                 <div>
                   <p className="text-gray-500 text-sm">{item.title}</p>
-                  <p className="text-white font-medium">{item.value}</p>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="text-white font-medium hover:text-accent transition-colors cursor-pointer"
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    <p className="text-white font-medium">{item.value}</p>
+                  )}
                 </div>
               </div>
             ))}

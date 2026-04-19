@@ -2,27 +2,29 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import myPhoto from '../../assets/profile-picture.png';
-import myCV from '../../assets/my-cv.pdf';
+import cvFr from '../../assets/CV_FR.pdf';
+import cvEn from '../../assets/CV_EN.pdf';
 
 export const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const myCV = i18n.language === 'en' ? cvEn : cvFr;
 
   return (
-    <section id="home" className="text-white py-20 md:py-28 min-h-screen flex items-center">
-      <div className="w-4/5 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+    <section id="home" className="text-white py-20 md:py-28 min-h-screen 2xl:min-h-[80vh] flex items-center">
+      <div className="w-4/5 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8 2xl:gap-16">
 
         {/* Left Column: Text and Buttons */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-xl md:text-2xl font-semibold mb-2 text-accent-soft tracking-wide">
+          <h2 className="text-xl md:text-2xl 2xl:text-3xl font-semibold mb-2 text-accent-soft tracking-wide">
             {t('home.role')}
           </h2>
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-white">
+          <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-extrabold leading-tight mb-4 text-white">
             {t('home.greeting')} <br />
-            <span className="text-5xl md:text-6xl font-extrabold mb-6 text-accent">
+            <span className="text-5xl md:text-6xl 2xl:text-7xl font-extrabold mb-6 text-accent">
               {t('home.name')}
             </span>
           </h1>
-          <p className="text-white/90 text-base md:text-lg mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+          <p className="text-white/90 text-base md:text-lg 2xl:text-xl mb-8 max-w-lg 2xl:max-w-xl mx-auto md:mx-0 leading-relaxed">
             {t('home.description')}
           </p>
 
@@ -72,7 +74,7 @@ export const Home = () => {
             <img
               src={myPhoto}
               alt={t('home.name')}
-              className="rounded-full w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover border-4 border-accent/30 relative z-10"
+              className="rounded-full w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 2xl:w-96 2xl:h-96 object-cover border-4 border-accent/30 relative z-10"
               style={{ objectPosition: '20% 30%' }}
             />
           </div>

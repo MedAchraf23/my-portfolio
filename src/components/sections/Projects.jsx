@@ -16,20 +16,21 @@ export const Projects = () => {
     {
       key: "project1",
       image: project1Img,
-      //image: null,
       github: "https://github.com/MedAchraf23",
+      imagePosition: "50% 50%",
     },
     {
       key: "project2",
       image: project2Img,
-      //image: null,
       github: "https://github.com/MedAchraf23",
+      imagePosition: "50% 50%",
     },
     {
       key: "project3",
       image: project3Img,
-      //image: null,
       github: "https://github.com/MedAchraf23",
+      imagePosition: "50% 75%",
+      imageScale:0,
     },
   ];
 
@@ -96,6 +97,7 @@ export const Projects = () => {
                     src={current.image}
                     alt={t(`projects.${current.key}.name`)}
                     className="w-full h-full object-cover"
+                    style={{ objectPosition: current.imagePosition, transform: `scale(${current.imageScale || 1})` }}
                   />
                 ) : (
                   <span className="text-gray-500 text-sm">

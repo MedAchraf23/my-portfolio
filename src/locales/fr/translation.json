@@ -9,28 +9,35 @@
     "role": "Développeur de logiciels",
     "greeting": "Bonjour, je suis",
     "name": "Mohamed Achraf HAFDI",
-    "description": "Je me spécialise dans la création de solutions numériques innovantes et de haute qualité, en utilisant les dernières technologies pour répondre à vos besoins.",
+    "description": "Je conçois et développe des applications web robustes en m’appuyant sur des architectures modernes. Mon objectif est de créer des solutions fiables, maintenables et adaptées à des problématiques concrètes.",
     "downloadCV": "TÉLÉCHARGER LE CV",
     "cvFileName": "Mohamed_Achraf_HAFDI_CV_FR.pdf"
   },
   "about": {
       "title": "À propos de moi",
       "description": "Étudiant en M2 MIAGE à l'Université de Haute-Alsace et apprenti chargé de projets d'intégration chez Orange. Je recherche un CDI en tant que jeune diplômé en développement informatique à partir de septembre 2026.",
-      "frontend": "Frontend",
-      "backend": "Backend",
+      "skills": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "database": "Base de données",
+        "devops": "DevOps & Outils",
+        "architecture": "Architecture"
+      },
       "experience": {
         "title": "Expérience Professionnelle",
         "job1": {
           "title": "Développeur PHP & Chargé de projets d'intégration",
           "company": "Orange",
           "description": "Développement et maintenance d'une application interne en PHP / Laravel. \nPilotage de projets d'intégration (ToIP, LAN/WiFi, sécurité).",
-          "period": "Sept. 2024 - Sept. 2026"
+          "period": "Sept. 2024 - Sept. 2026",
+          "tools": "PHP Laravel, JavaScript Vue.js, GitLab CI/CD, MVC"
         },
         "job2": {
           "title": "Stagiaire Développement Web Python",
           "company": "Provençale SA",
           "description": "Création d'un site web de présentation de planning des absences et d'une interface de gestion de stock intégrée à l'ERP de l'entreprise (Sage X3).",
-          "period": "Mai 2024 - Août 2024"
+          "period": "Mai 2024 - Août 2024",
+          "tools": "Python, Flask, SQLite, Bootstrap, Git"
         }
       },
       "education": {
@@ -55,20 +62,23 @@
     "projects": {
       "title": "Mes Projets",
       "project1": {
-        "name": "Calorie Tracker",
-        "description": "Développement d'un site de suivi nutritionnel avec un back-end en PHP utilisant PDO, AJAX pour une UX fluide, et une architecture MVC pour un code organisé. Le front-end était réactif et attrayant, construit avec HTML, CSS et Bootstrap. Travail en équipe Agile pour un développement efficace.",
-        "tools": "Html/Css, PHP(PDO), Javascript, AJAX, Agile"
+        "name": "with.dev",
+        "description": "Conception et développement d’une plateforme de recrutement inspirée de HelloWork, couvrant l’ensemble du cycle candidat/recruteur. Mise en place de fonctionnalités clés telles que la gestion des offres, des candidatures, le suivi des statuts et une recherche avancée. Implémentation d’un système de sécurité basé sur Keycloak (OAuth2/JWT) avec gestion des rôles et des accès. Architecture hexagonale accompagnée de tests unitaires et d’intégration. Travail en équipe Agile pour un développement efficace.",
+        "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
       },
       "project2": {
         "name": "SmartDoc",
-        "description": "Développement d'une plateforme de santé permettant aux patients de rechercher, évaluer et commenter les médecins, tandis que les médecins gèrent les rendez-vous et consultent les commentaires. Construit avec Angular pour le front-end, NodeJS pour le back-end, et MariaDB pour la gestion des données, en suivant la méthodologie Agile.",
-        "tools": "Angular, NodeJS, MariaDB, Agile, Tailwind CSS"
+        "description": "Développement d'une application web et d'une API REST en PHP sans Framework, en respectant les standards PSR et une architecture hexagonale. Implémentation d'un système de routage personnalisé, d'un mini ORM, d'un middleware.",
+        "tools": "PHP, MySQL, Composer"
       },
       "project3": {
         "name": "Portfolio",
         "description": "Portfolio personnel développé avec React et TailwindCSS, présentant mes projets et compétences de manière interactive et responsive.",
         "tools": "React, TailwindCSS, i18n"
       }
+    },
+    "footer": {
+      "rights": "Tous droits réservés."
     },
     "contact": {
       "title": "Contactez-moi",

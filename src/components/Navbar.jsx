@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { FrFlag, GbFlag } from "./Flags";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const { t, i18n } = useTranslation();
@@ -69,9 +70,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               className="ml-4 px-3 py-1.5 text-sm font-semibold rounded border border-gray-600 text-gray-300 hover:text-white hover:border-accent transition-colors flex items-center gap-2 cursor-pointer"
               aria-label="Toggle language"
             >
-              <span className="text-base leading-none" aria-hidden="true">
-                {i18n.language === "en" ? "\uD83C\uDDEB\uD83C\uDDF7" : "\uD83C\uDDEC\uD83C\uDDE7"}
-              </span>
+              {i18n.language === "en" ? <FrFlag /> : <GbFlag />}
               <span>{i18n.language === "en" ? "FR" : "EN"}</span>
             </button>
           </div>

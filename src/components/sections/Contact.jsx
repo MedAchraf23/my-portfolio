@@ -35,10 +35,10 @@ export const Contact = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_ik4sb1a",
+        "template_fhrb1b2",
         templateParams,
-        "YOUR_PUBLIC_KEY"
+        "urLkdA7U-OnpxA3jB"
       )
       .then(() => {
         setStatus("success");

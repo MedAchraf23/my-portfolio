@@ -8,15 +8,28 @@ import uc2Logo from "../../assets/UC2_logo.png";
 export const About = () => {
   const { t } = useTranslation();
 
-  const frontendSkills = [
-    "React",
-    "Vue",
-    "TypeScript",
-    "TailwindCSS",
-    "Svelte",
+  const skillCategories = [
+    {
+      key: "backend",
+      skills: ["Java (Spring Boot)", "C# (.NET)", "Python (Flask)", "PHP (Laravel)"],
+    },
+    {
+      key: "frontend",
+      skills: ["JavaScript", "React", "Vue.js", "HTML/CSS", "Tailwind CSS"],
+    },
+    {
+      key: "architecture",
+      skills: ["REST API", "Clean Architecture", "MVC", "Microservices", "Agile/Scrum"],
+    },
+    {
+      key: "devops",
+      skills: ["Git", "GitLab CI/CD", "Docker", "Jira"],
+    },
+    {
+      key: "database",
+      skills: ["MySQL", "PostgreSQL", "SQLite"],
+    },
   ];
-
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
 
   const experiences = [
     {
@@ -71,38 +84,45 @@ export const About = () => {
               {t("about.description")}
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6">
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-accent-soft">
-                  {t("about.frontend")}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+            {/* Ligne 1 : 3 catégories */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+              {skillCategories.slice(0, 3).map(({ key, skills }) => (
+                <div key={key} className="rounded-xl p-6">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-accent-soft text-center">
+                    {t(`about.skills.${key}`)}
+                  </h3>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {skills.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-
-              <div className="rounded-xl p-6">
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-accent-soft">
-                  {t("about.backend")}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              ))}
+            </div>
+            {/* Ligne 2 : 2 catégories centrées */}
+            <div className="flex flex-col md:flex-row justify-center gap-6">
+              {skillCategories.slice(3).map(({ key, skills }) => (
+                <div key={key} className="rounded-xl p-6 md:w-1/3">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-accent-soft text-center">
+                    {t(`about.skills.${key}`)}
+                  </h3>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {skills.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -125,9 +145,21 @@ export const About = () => {
                 <p className="whitespace-pre-line text-white text-base mb-4 leading-relaxed">
                   {t(`about.experience.${key}.description`)}
                 </p>
-                <span className="text-accent-soft text-sm mb-4">
+                <span className="text-accent-soft text-sm mb-3">
                   {t(`about.experience.${key}.period`)}
                 </span>
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {t(`about.experience.${key}.tools`)
+                    .split(", ")
+                    .map((tool, i) => (
+                      <span
+                        key={i}
+                        className="bg-accent/10 text-accent py-0.5 px-2 rounded-full text-xs hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                </div>
                 <a
                   href={website}
                   target="_blank"

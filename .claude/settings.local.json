@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /c/Dev/Projets/my-portfolio/*.js /c/Dev/Projets/my-portfolio/*.json)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

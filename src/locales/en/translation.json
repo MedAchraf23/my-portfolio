@@ -9,28 +9,35 @@
     "role": "Software Developer",
     "greeting": "Hello, I am",
     "name": "Mohamed Achraf HAFDI",
-    "description": "I specialize in building innovative and high-quality digital solutions, utilizing the latest technologies to meet your specific needs.",
+    "description": "I design and develop robust web applications using modern architectures. My goal is to build reliable, maintainable solutions that address real-world challenges.",
     "downloadCV": "DOWNLOAD CV",
     "cvFileName": "Mohamed_Achraf_HAFDI_CV_EN.pdf"
   },
   "about": {
       "title": "About Me",
       "description": "M2 MIAGE student at Université de Haute-Alsace and Integration Project Manager Apprentice at Orange. I am looking for a full-time software development position starting in September 2026.",
-      "frontend": "Frontend",
-      "backend": "Backend",
+      "skills": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "database": "Databases",
+        "devops": "DevOps & Tools",
+        "architecture": "Architecture"
+      },
       "experience": {
         "title": "Work Experience",
         "job1": {
           "title": "PHP Developer & Integration Project Manager",
           "company": "Orange",
           "description": "Developed and maintained an internal application using PHP / Laravel. \nManaged integration projects including ToIP, LAN/WiFi, and security.",
-          "period": "Sep 2024 - Sep 2026"
+          "period": "Sep 2024 - Sep 2026",
+          "tools": "PHP Laravel, JavaScript Vue.js, GitLab CI/CD, MVC"
         },
         "job2": {
           "title": "Python Web Developer Intern",
           "company": "Provençale SA",
           "description": "Created an absence planning website and built an inventory management interface integrated with the company's ERP (Sage X3).",
-          "period": "May 2024 - Aug 2024"
+          "period": "May 2024 - Aug 2024",
+          "tools": "Python, Flask, SQLite, Bootstrap, Git"
         }
       },
       "education": {
@@ -55,20 +62,23 @@
     "projects": {
       "title": "My Projects",
       "project1": {
-        "name": "Calorie Tracker",
-        "description": "Development of a nutritional tracking website with a PHP back-end using PDO, AJAX for a smooth UX, and an MVC architecture for organized code. The front-end was responsive and attractive, built with HTML, CSS and Bootstrap. Agile teamwork for efficient development.",
-        "tools": "Html/Css, PHP(PDO), Javascript, AJAX, Agile"
+        "name": "with.dev",
+        "description": "Design and development of a recruitment platform inspired by HelloWork, covering the entire candidate/recruiter lifecycle. Implementation of key features such as job offer management, application tracking, status monitoring, and advanced search. Integration of a security system using Keycloak (OAuth2/JWT) with role-based access control. Built using a hexagonal architecture with unit and integration testing. Agile teamwork for efficient development.",
+        "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
       },
       "project2": {
         "name": "SmartDoc",
-        "description": "Development of a health platform allowing patients to search, rate and review doctors, while doctors manage appointments and view feedback. Built with Angular for the front-end, NodeJS for the back-end, and MariaDB for data management, following Agile methodology.",
-        "tools": "Angular, NodeJS, MariaDB, Agile, Tailwind CSS"
+        "description": "Development of a web application and a REST API in PHP without using a framework, following PSR standards and a hexagonal architecture. Implementation of a custom routing system, a lightweight ORM, and middleware.",
+        "tools": "PHP, MySQL, Composer"
       },
       "project3": {
         "name": "Portfolio",
         "description": "Personal portfolio developed with React and TailwindCSS, showcasing my projects and skills in an interactive and responsive way.",
         "tools": "React, TailwindCSS, i18n"
       }
+    },
+    "footer": {
+      "rights": "All rights reserved."
     },
     "contact": {
       "title": "Get in Touch",

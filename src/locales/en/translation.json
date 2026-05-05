@@ -67,9 +67,9 @@
         "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
       },
       "project2": {
-        "name": "SmartDoc",
-        "description": "Development of a web application and a REST API in PHP without using a framework, following PSR standards and a hexagonal architecture. Implementation of a custom routing system, a lightweight ORM, and middleware.",
-        "tools": "PHP, MySQL, Composer"
+        "name": "Absence Planning",
+        "description": "Web application developed during my internship at Provençale SA. Provides monthly and annual views of employee absences, with automated data extraction from the Nibelis HR software using BeautifulSoup. Secure authentication integrated via the company's OAuth2/AD FS. The screenshots shown use fictional data for illustration purposes.",
+        "tools": "Python, Flask, SQLite, Bootstrap, Git"
       },
       "project3": {
         "name": "Portfolio",

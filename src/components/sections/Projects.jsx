@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { FaGithub, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-// Import project images — add your screenshots here
 import project1Img from "../../assets/projects/project1.png";
 import project2Img from "../../assets/projects/project2.png";
 import project3Img from "../../assets/projects/project3.png";
@@ -17,20 +16,16 @@ export const Projects = () => {
       key: "project1",
       image: project1Img,
       github: "https://github.com/MedAchraf23",
-      imagePosition: "50% 50%",
     },
     {
       key: "project2",
       image: project2Img,
       github: "https://github.com/MedAchraf23",
-      imagePosition: "50% 50%",
     },
     {
       key: "project3",
       image: project3Img,
       github: "https://github.com/MedAchraf23",
-      imagePosition: "50% 75%",
-      imageScale:0,
     },
   ];
 
@@ -62,18 +57,14 @@ export const Projects = () => {
                 <h3 className="text-3xl md:text-4xl font-semibold text-accent-soft mb-6">
                   {t(`projects.${current.key}.name`)}
                 </h3>
-
                 <p className="text-white text-base leading-relaxed mb-8">
                   {t(`projects.${current.key}.description`)}
                 </p>
-
                 <p className="text-accent text-base font-medium">
                   {t(`projects.${current.key}.tools`)}
                 </p>
               </div>
-              
 
-              {/* Separator + GitHub icon */}
               <div className="mt-10">
                 <hr className="border-white/10 mb-6" />
                 <a
@@ -90,23 +81,14 @@ export const Projects = () => {
 
             {/* Right column — Project image + Navigation */}
             <div className="md:w-1/2 flex flex-col items-end gap-6">
-              {/* Image container */}
-              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center">
-                {current.image ? (
-                  <img
-                    src={current.image}
-                    alt={t(`projects.${current.key}.name`)}
-                    className="w-full h-full object-cover"
-                    style={{ objectPosition: current.imagePosition, transform: `scale(${current.imageScale || 1})` }}
-                  />
-                ) : (
-                  <span className="text-gray-500 text-sm">
-                    {t(`projects.${current.key}.name`)}
-                  </span>
-                )}
+              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+                <img
+                  src={current.image}
+                  alt={t(`projects.${current.key}.name`)}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              {/* Navigation buttons */}
               <div className="flex gap-3">
                 <button
                   onClick={goToPrevious}

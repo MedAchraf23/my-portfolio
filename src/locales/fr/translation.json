@@ -67,9 +67,9 @@
         "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
       },
       "project2": {
-        "name": "SmartDoc",
-        "description": "Développement d'une application web et d'une API REST en PHP sans Framework, en respectant les standards PSR et une architecture hexagonale. Implémentation d'un système de routage personnalisé, d'un mini ORM, d'un middleware.",
-        "tools": "PHP, MySQL, Composer"
+        "name": "Planning des Absences",
+        "description": "Application web développée lors de mon stage chez Provençale SA. Permet la visualisation des absences des employés sous format mensuel et annuel, avec extraction automatisée des données depuis le logiciel RH Nibelis via BeautifulSoup. Authentification sécurisée intégrée via OAuth2/AD FS de l'entreprise. Les captures présentées utilisent des données fictives à titre d'illustration.",
+        "tools": "Python, Flask, SQLite, Bootstrap, Git"
       },
       "project3": {
         "name": "Portfolio",

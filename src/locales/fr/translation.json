@@ -15,7 +15,7 @@
   },
   "about": {
       "title": "À propos de moi",
-      "description": "Étudiant en M2 MIAGE à l'Université de Haute-Alsace et apprenti chargé de projets d'intégration chez Orange. Je recherche un CDI en tant que jeune diplômé en développement informatique à partir de septembre 2026.",
+      "description": "Apprenti développeur logiciel chez Orange et étudiant en M2 MIAGE à l'Université de Haute-Alsace. Je recherche un CDI en développement informatique à partir de septembre 2026.",
       "skills": {
         "backend": "Backend",
         "frontend": "Frontend",
@@ -63,12 +63,12 @@
       "title": "Mes Projets",
       "project1": {
         "name": "with.dev",
-        "description": "Conception et développement d’une plateforme de recrutement inspirée de HelloWork, couvrant l’ensemble du cycle candidat/recruteur. Mise en place de fonctionnalités clés telles que la gestion des offres, des candidatures, le suivi des statuts et une recherche avancée. Implémentation d’un système de sécurité basé sur Keycloak (OAuth2/JWT) avec gestion des rôles et des accès. Architecture hexagonale accompagnée de tests unitaires et d’intégration. Travail en équipe Agile pour un développement efficace.",
+        "description": "Conception et développement en cours d’une plateforme de recrutement inspirée de HelloWork, couvrant le cycle candidat/recruteur. Mise en place de fonctionnalités clés telles que la gestion des offres et des candidatures, le suivi des statuts et une recherche avancée. Implémentation d’un système de sécurité basé sur Keycloak (OAuth2/JWT) avec gestion des rôles et des accès. Architecture hexagonale accompagnée de tests unitaires et d’intégration, dans un contexte de travail en équipe Agile.",
         "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
       },
       "project2": {
         "name": "Planning des Absences",
-        "description": "Application web développée lors de mon stage chez Provençale SA. Permet la visualisation des absences des employés sous format mensuel et annuel, avec extraction automatisée des données depuis le logiciel RH Nibelis via BeautifulSoup. Authentification sécurisée intégrée via OAuth2/AD FS de l'entreprise. Les captures présentées utilisent des données fictives à titre d'illustration.",
+        "description": "Application web développée lors de mon stage chez Provençale SA, puis déployée sur les serveurs internes de l’entreprise pour une utilisation par les collaborateurs. Elle permet la visualisation des absences des employés sous des formats mensuel et annuel, avec extraction automatisée des données depuis le logiciel RH Nibelis via BeautifulSoup. L’authentification est sécurisée grâce à l’intégration OAuth2/AD FS de l’entreprise. Les captures d’écran présentées sont des reproductions approximatives basées sur des données fictives, afin de respecter les contraintes de confidentialité.",
         "tools": "Python, Flask, SQLite, Bootstrap, Git"
       },
       "project3": {

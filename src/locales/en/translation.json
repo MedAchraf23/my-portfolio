@@ -15,7 +15,7 @@
   },
   "about": {
       "title": "About Me",
-      "description": "M2 MIAGE student at Université de Haute-Alsace and Integration Project Manager Apprentice at Orange. I am looking for a full-time software development position starting in September 2026.",
+      "description": "Software development apprentice at Orange and M2 MIAGE student at the University of Upper Alsace. Seeking a developer role from September 2026.",
       "skills": {
         "backend": "Backend",
         "frontend": "Frontend",
@@ -63,12 +63,12 @@
       "title": "My Projects",
       "project1": {
         "name": "with.dev",
-        "description": "Design and development of a recruitment platform inspired by HelloWork, covering the entire candidate/recruiter lifecycle. Implementation of key features such as job offer management, application tracking, status monitoring, and advanced search. Integration of a security system using Keycloak (OAuth2/JWT) with role-based access control. Built using a hexagonal architecture with unit and integration testing. Agile teamwork for efficient development.",
+        "description": "Ongoing design and development of a recruitment platform inspired by HelloWork, covering the candidate/recruiter lifecycle. Implementation of key features such as job and application management, status tracking, and advanced search. Integration of a security system based on Keycloak (OAuth2/JWT) with role-based access control. Built using a hexagonal architecture with unit and integration testing, within an Agile team environment.",
         "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
       },
       "project2": {
         "name": "Absence Planning",
-        "description": "Web application developed during my internship at Provençale SA. Provides monthly and annual views of employee absences, with automated data extraction from the Nibelis HR software using BeautifulSoup. Secure authentication integrated via the company's OAuth2/AD FS. The screenshots shown use fictional data for illustration purposes.",
+        "description": "Web application developed during my internship at Provençale SA and deployed on the company’s internal servers for employee use. It enables visualization of employee absences in both monthly and yearly views, with automated data extraction from the Nibelis HR system using BeautifulSoup. Secure authentication is implemented via the company’s OAuth2/AD FS infrastructure. The screenshots provided are approximate representations based on fictitious data, in order to comply with company confidentiality requirements.",
         "tools": "Python, Flask, SQLite, Bootstrap, Git"
       },
       "project3": {

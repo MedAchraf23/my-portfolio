@@ -15,17 +15,16 @@ export const Projects = () => {
     {
       key: "project1",
       image: project1Img,
-      github: "https://github.com/MedAchraf23",
+      github: "https://github.com/MedAchraf23/with.dev.git",
     },
     {
       key: "project2",
       image: project2Img,
-      github: "https://github.com/MedAchraf23",
     },
     {
       key: "project3",
       image: project3Img,
-      github: "https://github.com/MedAchraf23",
+      github: "https://github.com/MedAchraf23/my-portfolio.git",
     },
   ];
 
@@ -67,15 +66,17 @@ export const Projects = () => {
 
               <div className="mt-10">
                 <hr className="border-white/10 mb-6" />
-                <a
-                  href={current.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-white/20 text-gray-400 hover:text-white hover:border-white transition"
-                  aria-label="GitHub Repository"
-                >
-                  <FaGithub size={22} />
-                </a>
+                {current.github && (
+                  <a
+                    href={current.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-white/20 text-gray-400 hover:text-white hover:border-white transition"
+                    aria-label="GitHub Repository"
+                  >
+                    <FaGithub size={22} />
+                  </a>
+                )}
               </div>
             </div>
 

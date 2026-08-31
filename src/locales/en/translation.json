@@ -26,11 +26,11 @@
       "experience": {
         "title": "Work Experience",
         "job1": {
-          "title": "PHP Developer & Integration Project Manager",
+          "title": "Full-Stack PHP / Laravel Developer",
           "company": "Orange",
-          "description": "Developed and maintained an internal application using PHP / Laravel. \nManaged integration projects including ToIP, LAN/WiFi, and security.",
+          "description": "Contributed to the migration of the application to a Linux infrastructure. \nDeveloped new features, including third-party API integrations (DigiSign electronic signature, survey module), and resolved critical business bugs in production. \nIndustrialized deployment through CI/CD and improved code quality, security, and performance.",
           "period": "Sep 2024 - Sep 2026",
-          "tools": "PHP Laravel, JavaScript Vue.js, GitLab CI/CD, MVC"
+          "tools": "Laravel, PHP, Vue.js, REST API, GitLab CI/CD, SonarQube, Agile/Scrum"
         },
         "job2": {
           "title": "Python Web Developer Intern",

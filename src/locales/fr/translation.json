@@ -26,11 +26,11 @@
       "experience": {
         "title": "Expérience Professionnelle",
         "job1": {
-          "title": "Développeur PHP & Chargé de projets d'intégration",
+          "title": "Développeur Full-Stack PHP / Laravel",
           "company": "Orange",
-          "description": "Développement et maintenance d'une application interne en PHP / Laravel. \nPilotage de projets d'intégration (ToIP, LAN/WiFi, sécurité).",
+          "description": "Participation à la migration de l'application vers une infrastructure Linux. \nDéveloppement de nouvelles fonctionnalités, dont l'intégration d'API tierces (signature électronique DigiSign, module de sondage), et résolution de bugs métier critiques en production. \nIndustrialisation du déploiement (CI/CD) et amélioration de la qualité, de la sécurité et des performances du code.",
           "period": "Sept. 2024 - Sept. 2026",
-          "tools": "PHP Laravel, JavaScript Vue.js, GitLab CI/CD, MVC"
+          "tools": "Laravel, PHP, Vue.js, API REST, GitLab CI/CD, SonarQube, Agile/Scrum"
         },
         "job2": {
           "title": "Stagiaire Développement Web Python",

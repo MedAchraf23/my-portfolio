@@ -5,7 +5,9 @@ import myPhoto from '../../assets/profile-picture.png';
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
-  const myCV = i18n.language === 'en' ? '/CV_EN.pdf' : '/CV_FR.pdf';
+  const myCV = i18n.language === 'en'
+    ? '/Mohamed_Achraf_HAFDI_CV_EN.pdf'
+    : '/Mohamed_Achraf_HAFDI_CV_FR.pdf';
 
   return (
     <section id="home" className="text-white py-20 md:py-28 min-h-screen 2xl:min-h-[80vh] flex items-center">

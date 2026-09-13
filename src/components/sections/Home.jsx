@@ -2,12 +2,10 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import myPhoto from '../../assets/profile-picture.png';
-import cvFr from '../../assets/CV_FR.pdf';
-import cvEn from '../../assets/CV_EN.pdf';
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
-  const myCV = i18n.language === 'en' ? cvEn : cvFr;
+  const myCV = i18n.language === 'en' ? '/CV_EN.pdf' : '/CV_FR.pdf';
 
   return (
     <section id="home" className="text-white py-20 md:py-28 min-h-screen 2xl:min-h-[80vh] flex items-center">

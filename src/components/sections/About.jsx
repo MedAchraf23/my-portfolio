@@ -11,23 +11,27 @@ export const About = () => {
   const skillCategories = [
     {
       key: "backend",
-      skills: ["Java (Spring Boot)", "C# (.NET)", "Python (Flask)", "PHP (Laravel)"],
+      skills: ["Java (Spring Boot)", "PHP (Laravel)", "C# (.NET)"],
     },
     {
       key: "frontend",
-      skills: ["JavaScript", "React", "Vue.js", "HTML/CSS", "Tailwind CSS"],
-    },
-    {
-      key: "architecture",
-      skills: ["REST API", "Clean Architecture", "MVC", "Microservices", "Agile/Scrum"],
-    },
-    {
-      key: "devops",
-      skills: ["Git", "GitLab CI/CD", "Docker", "Jira"],
+      skills: ["React", "TypeScript", "Vue.js", "JavaScript", "HTML/CSS", "Tailwind CSS"],
     },
     {
       key: "database",
-      skills: ["MySQL", "PostgreSQL", "SQLite"],
+      skills: ["PostgreSQL", "MySQL", "SQLite"],
+    },
+    {
+      key: "architecture",
+      skills: ["API REST", "Clean Architecture", "MVC", "Microservices", "SOLID"],
+    },
+    {
+      key: "devops",
+      skills: ["Git", "GitLab CI/CD", "Docker", "Ansible"],
+    },
+    {
+      key: "methodology",
+      skills: ["Agile/Scrum", "Jira"],
     },
   ];
 
@@ -80,13 +84,12 @@ export const About = () => {
 
           {/* 1. First Block: Description & Skills */}
           <div className="rounded-xl p-8 bg-[#262626] border border-white/5 hover:-translate-y-1 transition-all mb-12">
-            <p className="text-white mb-6 leading-relaxed">
+            <p className="text-white mb-6 leading-relaxed text-center">
               {t("about.description")}
             </p>
 
-            {/* Ligne 1 : 3 catégories */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-              {skillCategories.slice(0, 3).map(({ key, skills }) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {skillCategories.map(({ key, skills }) => (
                 <div key={key} className="rounded-xl p-6">
                   <h3 className="text-xl md:text-2xl font-semibold mb-4 text-accent-soft text-center">
                     {t(`about.skills.${key}`)}
@@ -95,27 +98,7 @@ export const About = () => {
                     {skills.map((tech, i) => (
                       <span
                         key={i}
-                        className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-            {/* Ligne 2 : 2 catégories centrées */}
-            <div className="flex flex-col md:flex-row justify-center gap-6">
-              {skillCategories.slice(3).map(({ key, skills }) => (
-                <div key={key} className="rounded-xl p-6 md:w-1/3">
-                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-accent-soft text-center">
-                    {t(`about.skills.${key}`)}
-                  </h3>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {skills.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
+                        className="bg-accent/10 text-accent py-1 px-3 rounded-full text-base text-center hover:bg-accent/20 hover:shadow-[0_2px_8px_rgba(210,180,140,0.25)] transition"
                       >
                         {tech}
                       </span>
@@ -130,15 +113,30 @@ export const About = () => {
           <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-accent-soft text-center">
             {t("about.experience.title")}
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-5xl mx-auto">
+          <div className="flex flex-col gap-6 mb-12">
             {experiences.map(({ key, logo, logoAlt, website }) => (
               <div
                 key={key}
                 className="rounded-xl p-6 bg-[#262626] border border-white/5 hover:-translate-y-1 transition-all flex flex-col items-start text-left"
               >
-                <h4 className="text-xl font-semibold text-accent mb-2">
-                  {t(`about.experience.${key}.title`)}
-                </h4>
+                <div className="flex items-center justify-between w-full mb-2 gap-4">
+                  <h4 className="text-xl font-semibold text-accent">
+                    {t(`about.experience.${key}.title`)}
+                  </h4>
+                  <a
+                    href={website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${logoAlt} — site officiel`}
+                    className="shrink-0 cursor-pointer hover:opacity-100 hover:scale-105 transition-all"
+                  >
+                    <img
+                      src={logo}
+                      alt={logoAlt}
+                      className="h-16 w-auto object-contain opacity-90"
+                    />
+                  </a>
+                </div>
                 <p className="text-accent-light italic font-normal mb-3">
                   {t(`about.experience.${key}.company`)}
                 </p>
@@ -148,7 +146,7 @@ export const About = () => {
                 <span className="text-accent-soft text-sm mb-3">
                   {t(`about.experience.${key}.period`)}
                 </span>
-                <div className="flex flex-wrap gap-1.5 mb-4">
+                <div className="flex flex-wrap gap-1.5">
                   {t(`about.experience.${key}.tools`)
                     .split(", ")
                     .map((tool, i) => (
@@ -160,19 +158,6 @@ export const About = () => {
                       </span>
                     ))}
                 </div>
-                <a
-                  href={website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${logoAlt} — site officiel`}
-                  className="mt-auto cursor-pointer hover:opacity-100 hover:scale-105 transition-all"
-                >
-                  <img
-                    src={logo}
-                    alt={logoAlt}
-                    className="h-14 w-auto object-contain opacity-90"
-                  />
-                </a>
               </div>
             ))}
           </div>

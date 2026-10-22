@@ -8,36 +8,37 @@
   "home": {
     "role": "Développeur de logiciels",
     "greeting": "Bonjour, je suis",
-    "name": "Mohamed Achraf HAFDI",
+    "name": "Achraf HAFDI",
     "description": "Je conçois et développe des applications web robustes en m’appuyant sur des architectures modernes. Mon objectif est de créer des solutions fiables, maintenables et adaptées à des problématiques concrètes.",
     "downloadCV": "TÉLÉCHARGER LE CV",
     "cvFileName": "Mohamed_Achraf_HAFDI_CV_FR.pdf"
   },
   "about": {
       "title": "À propos de moi",
-      "description": "Apprenti développeur logiciel chez Orange et étudiant en M2 MIAGE à l'Université de Haute-Alsace. Je recherche un CDI en développement informatique à partir de septembre 2026.",
+      "description": "Développeur logiciel diplômé d'un Master 2 MIAGE, avec 2 ans d'expérience en tant que développeur Full-Stack chez Orange.",
       "skills": {
         "backend": "Backend",
         "frontend": "Frontend",
         "database": "Base de données",
+        "architecture": "Architecture & Conception",
         "devops": "DevOps & Outils",
-        "architecture": "Architecture"
+        "methodology": "Méthodologie"
       },
       "experience": {
         "title": "Expérience Professionnelle",
         "job1": {
           "title": "Développeur Full-Stack PHP / Laravel",
           "company": "Orange",
-          "description": "Participation à la migration de l'application vers une infrastructure Linux. \nDéveloppement de nouvelles fonctionnalités, dont l'intégration d'API tierces (signature électronique DigiSign, module de sondage), et résolution de bugs métier critiques en production. \nIndustrialisation du déploiement (CI/CD) et amélioration de la qualité, de la sécurité et des performances du code.",
+          "description": "• Concevoir et livrer un module de mesure de la satisfaction client (PHP/Laravel, Vue.js, API tierce) pour 60 utilisateurs, afin de remplacer un processus manuel sans suivi\n• Refondre des modules métier (facturation, signature électronique) pour simplifier les parcours utilisateurs et accélérer les pages, via l'optimisation des requêtes, des index et du chargement des données\n• Moderniser progressivement l'interface legacy en Blade avec Vue.js, selon une approche « Islands Architecture »\n• Contribuer à l'industrialisation du déploiement via GitLab CI/CD : tests, contrôles qualité/sécurité, génération des livrables et déploiement via l'Orange Deployment Engine et Ansible, réduisant les opérations manuelles d'environ 1 h à moins de 10 min\n• Corriger plus de 30 anomalies, dont des bugs critiques en production\n• Assurer le suivi de la migration de l'application vers un hébergement Linux sécurisé dans le cloud privé d'Orange\n• Présenter les réalisations aux utilisateurs métier et travailler en méthode Agile/Scrum",
           "period": "Sept. 2024 - Sept. 2026",
-          "tools": "Laravel, PHP, Vue.js, API REST, GitLab CI/CD, SonarQube, Agile/Scrum"
+          "tools": "PHP, Laravel, Vue.js, MySQL, API REST, Docker, GitLab CI/CD, Linux, Ansible, SonarQube, Checkmarx, Gitleaks, Agile/Scrum, Jira, Confluence"
         },
         "job2": {
           "title": "Stagiaire Développement Web Python",
           "company": "Provençale SA",
-          "description": "Création d'un site web de présentation de planning des absences et d'une interface de gestion de stock intégrée à l'ERP de l'entreprise (Sage X3).",
+          "description": "• Développer un site de planning des absences : extraction automatisée des données du logiciel RH, normalisation et stockage dans une base interne, affichage en vues mensuelle et annuelle avec formulaire de filtres\n• Développer une interface de gestion de stock reliée à Sage X3 : scan de codes-barres, saisie des quantités, validation des sorties de stock, mise à jour de l'ERP et mise en place d'un cache des articles pour accélérer l'application\n• Assurer la traçabilité et la sécurité : historique des opérations, gestion des erreurs avec messages clairs, authentification via OAuth2 / OpenID Connect\n• Structurer le code de façon modulaire (blueprints Flask, ORM SQLAlchemy), avec des environnements de développement et de production distincts, versionnés avec Git\n• Déployer le planning des absences sur le serveur de l'entreprise, utilisé quotidiennement par les employés avec un accueil très positif",
           "period": "Mai 2024 - Août 2024",
-          "tools": "Python, Flask, SQLite, Bootstrap, Git"
+          "tools": "Python, Flask, SQLite, SQLAlchemy, Bootstrap, OAuth2 / OpenID Connect, Sage X3, Git"
         }
       },
       "education": {
@@ -63,8 +64,8 @@
       "title": "Mes Projets",
       "project1": {
         "name": "with.dev",
-        "description": "Conception et développement en cours d’une plateforme de recrutement inspirée de HelloWork, couvrant le cycle candidat/recruteur. Mise en place de fonctionnalités clés telles que la gestion des offres et des candidatures, le suivi des statuts et une recherche avancée. Implémentation d’un système de sécurité basé sur Keycloak (OAuth2/JWT) avec gestion des rôles et des accès. Architecture hexagonale accompagnée de tests unitaires et d’intégration, dans un contexte de travail en équipe Agile.",
-        "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
+        "description": "Conception et développement en cours d'une plateforme de recrutement IT, exposant une API REST documentée (OpenAPI) avec recherche multicritère d'offres et gestion du profil candidat (DTO via MapStruct). Persistance des données assurée par Hibernate/JPA sur PostgreSQL (Supabase), avec build et gestion des dépendances via Maven. Sécurisation de l'application en resource server stateless, via des JWT Supabase Auth validés par JWKS, avec rôles candidat/recruteur et cloisonnement des routes publiques et protégées. Architecture en couches (API / domaine / infrastructure), couverte par plus de 260 tests automatisés (JUnit, Mockito, Vitest, Testing Library). L'ensemble est conteneurisé avec Docker Compose (PostgreSQL, backend, frontend) et intégré à un pipeline CI/CD GitHub Actions assurant build, tests et livraison d'images Docker versionnées (GHCR).",
+        "tools": "Java 21, Spring Boot 4, Hibernate/JPA, Maven, React, TypeScript, API REST, PostgreSQL, Docker, GitHub Actions, Supabase Auth"
       },
       "project2": {
         "name": "Planning des Absences",

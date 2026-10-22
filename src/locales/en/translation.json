@@ -8,36 +8,37 @@
   "home": {
     "role": "Software Developer",
     "greeting": "Hello, I am",
-    "name": "Mohamed Achraf HAFDI",
+    "name": "Achraf HAFDI",
     "description": "I design and develop robust web applications using modern architectures. My goal is to build reliable, maintainable solutions that address real-world challenges.",
     "downloadCV": "DOWNLOAD CV",
     "cvFileName": "Mohamed_Achraf_HAFDI_CV_EN.pdf"
   },
   "about": {
       "title": "About Me",
-      "description": "Software development apprentice at Orange and M2 MIAGE student at the University of Upper Alsace. Seeking a developer role from September 2026.",
+      "description": "Software developer with a Master's degree in MIAGE and 2 years of experience as a Full-Stack developer at Orange.",
       "skills": {
         "backend": "Backend",
         "frontend": "Frontend",
         "database": "Databases",
+        "architecture": "Architecture & Design",
         "devops": "DevOps & Tools",
-        "architecture": "Architecture"
+        "methodology": "Methodology"
       },
       "experience": {
         "title": "Work Experience",
         "job1": {
           "title": "Full-Stack PHP / Laravel Developer",
           "company": "Orange",
-          "description": "Contributed to the migration of the application to a Linux infrastructure. \nDeveloped new features, including third-party API integrations (DigiSign electronic signature, survey module), and resolved critical business bugs in production. \nIndustrialized deployment through CI/CD and improved code quality, security, and performance.",
+          "description": "• Designed and delivered a customer satisfaction survey module (PHP/Laravel, Vue.js, third-party API) for 60 users, replacing an untracked manual process\n• Overhauled business modules (billing, electronic signature) to simplify user journeys and speed up pages, through query, index, and data-loading optimization\n• Progressively modernized the legacy Blade interface with Vue.js, using an \"Islands Architecture\" approach\n• Contributed to deployment industrialization via GitLab CI/CD: tests, quality/security checks, build generation, and deployment through the Orange Deployment Engine and Ansible, cutting manual operations from about 1 hour to under 10 minutes\n• Fixed over 30 issues, including critical production bugs\n• Tracked the application's migration to a secure Linux hosting environment in Orange's private cloud\n• Presented achievements to business stakeholders and worked in an Agile/Scrum methodology",
           "period": "Sep 2024 - Sep 2026",
-          "tools": "Laravel, PHP, Vue.js, REST API, GitLab CI/CD, SonarQube, Agile/Scrum"
+          "tools": "PHP, Laravel, Vue.js, MySQL, REST API, Docker, GitLab CI/CD, Linux, Ansible, SonarQube, Checkmarx, Gitleaks, Agile/Scrum, Jira, Confluence"
         },
         "job2": {
           "title": "Python Web Developer Intern",
           "company": "Provençale SA",
-          "description": "Created an absence planning website and built an inventory management interface integrated with the company's ERP (Sage X3).",
+          "description": "• Develop an absence planning website: automated data extraction from the HR software, normalization and storage in an internal database, monthly and yearly views with a filter form\n• Develop a stock management interface connected to Sage X3: barcode scanning, quantity entry, stock-out validation, ERP updates, and an item cache to speed up the application\n• Ensure traceability and security: operations history, error handling with clear messages, authentication via OAuth2 / OpenID Connect\n• Structure the code in a modular way (Flask blueprints, SQLAlchemy ORM), with separate development and production environments, versioned with Git\n• Deploy the absence planning tool on the company's server, used daily by employees with very positive feedback",
           "period": "May 2024 - Aug 2024",
-          "tools": "Python, Flask, SQLite, Bootstrap, Git"
+          "tools": "Python, Flask, SQLite, SQLAlchemy, Bootstrap, OAuth2 / OpenID Connect, Sage X3, Git"
         }
       },
       "education": {
@@ -63,8 +64,8 @@
       "title": "My Projects",
       "project1": {
         "name": "with.dev",
-        "description": "Ongoing design and development of a recruitment platform inspired by HelloWork, covering the candidate/recruiter lifecycle. Implementation of key features such as job and application management, status tracking, and advanced search. Integration of a security system based on Keycloak (OAuth2/JWT) with role-based access control. Built using a hexagonal architecture with unit and integration testing, within an Agile team environment.",
-        "tools": "Java, Spring Boot, React, PostgreSQL, Keycloak, GitHub, Agile"
+        "description": "Ongoing design and development of an IT recruitment platform, exposing a documented REST API (OpenAPI) with multi-criteria job search and candidate profile management (DTOs via MapStruct). Data persistence handled with Hibernate/JPA on PostgreSQL (Supabase), with build and dependency management via Maven. The application is secured as a stateless resource server, using Supabase Auth JWTs validated through JWKS, with candidate/recruiter roles and clear separation between public and protected routes. Layered architecture (API / domain / infrastructure), covered by over 260 automated tests (JUnit, Mockito, Vitest, Testing Library). The whole stack is containerized with Docker Compose (PostgreSQL, backend, frontend) and integrated into a GitHub Actions CI/CD pipeline handling build, tests, and delivery of versioned Docker images (GHCR).",
+        "tools": "Java 21, Spring Boot 4, Hibernate/JPA, Maven, React, TypeScript, API REST, PostgreSQL, Docker, GitHub Actions, Supabase Auth"
       },
       "project2": {
         "name": "Absence Planning",
